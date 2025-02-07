@@ -5,7 +5,7 @@
         <description>Recent content in Posts on some random docs</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 07 Feb 2025 19:23:25 +0100</lastBuildDate>
         <atom:link href="https://urbandavebe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
@@ -989,6 +989,153 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 <p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
 <h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
 <p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Markdown Cheat Sheet</title>
+            <link>https://urbandavebe.github.io/posts/mdzeugs/</link>
+            <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>
+            
+            <guid>https://urbandavebe.github.io/posts/mdzeugs/</guid>
+            <description>&lt;p&gt;This Markdown cheat sheet &lt;strong&gt;provides&lt;/strong&gt; a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic &lt;em&gt;syntax&lt;/em&gt; and extended syntax.&lt;/p&gt;
+&lt;h1 id=&#34;headings&#34;&gt;Headings&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
+&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;
+&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;
+&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;
+&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;
+&lt;h1 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;Emphasis, aka italics, with asterisks or underscores. &lt;strong&gt;Strong emphasis&lt;/strong&gt;, aka bold, with asterisks or underscores. Combined emphasis with asterisks and underscores. &lt;del&gt;Strikethrough&lt;/del&gt; with two tildes. &lt;strong&gt;&lt;em&gt;Bold and nested italic&lt;/em&gt;&lt;/strong&gt;. &lt;strong&gt;&lt;em&gt;All bold and italic&lt;/em&gt;&lt;/strong&gt;. &lt;strong&gt;&lt;em&gt;&lt;em&gt;Bold and italic nested&lt;/em&gt;&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>This Markdown cheat sheet <strong>provides</strong> a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic <em>syntax</em> and extended syntax.</p>
+<h1 id="headings">Headings</h1>
+<hr>
+<h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<h6 id="heading-6">Heading 6</h6>
+<h1 id="emphasis">Emphasis</h1>
+<hr>
+<p>Emphasis, aka italics, with asterisks or underscores. <strong>Strong emphasis</strong>, aka bold, with asterisks or underscores. Combined emphasis with asterisks and underscores. <del>Strikethrough</del> with two tildes. <strong><em>Bold and nested italic</em></strong>. <strong><em>All bold and italic</em></strong>. <strong><em><em>Bold and italic nested</em></em></strong>.</p>
+<h1 id="lists">Lists</h1>
+<hr>
+<h2 id="ordered">Ordered:</h2>
+<ol>
+<li>First ordered list item</li>
+<li>Another item</li>
+<li>Actual numbers don&rsquo;t matter, just that it&rsquo;s a number
+<ol>
+<li>1st.</li>
+<li>2nd.</li>
+<li>3rd.</li>
+</ol>
+</li>
+</ol>
+<h2 id="unordered">Unordered:</h2>
+<ul>
+<li>This is a list item
+<ul>
+<li>This is a nested list item
+<ul>
+<li>This is a nested list item</li>
+</ul>
+</li>
+<li>This is another list item</li>
+</ul>
+</li>
+<li>This is another list item</li>
+</ul>
+<h2 id="task">Task:</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Write the press release</li>
+<li><input disabled="" type="checkbox"> Update the website</li>
+<li><input disabled="" type="checkbox"> Contact the media</li>
+</ul>
+<h1 id="links">Links</h1>
+<hr>
+<p><a href="https://www.example.com">This is a link</a>.</p>
+<p><a href="https://www.example.com" title="Link Title">This link</a> has a title attribute.</p>
+<h1 id="tables">Tables</h1>
+<hr>
+<table>
+  <thead>
+      <tr>
+          <th>Syntax</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Header</td>
+          <td>Title</td>
+      </tr>
+      <tr>
+          <td>Paragraph</td>
+          <td>Text</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="blockquotes">Blockquotes</h1>
+<hr>
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.</p>
+</blockquote>
+<p>You can reference a footnote like this.</p>
+<blockquote>
+<p>All generalizations are false, including this one. — Mark Twain. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<h1 id="code">Code</h1>
+<hr>
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python syntax highlighting&#34;</span>
+</span></span><span style="display:flex;"><span>print(s)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>No language indicated, so no syntax highlighting.
+</span></span><span style="display:flex;"><span>But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
+</span></span></code></pre></div><p>You can remove line numbers, change the highlighting theme, and more. See <a href="https://gohugo.io/content-management/syntax-highlighting/">Syntax Highlighting</a> and <a href="https://gohugo.io/getting-started/configuration-markup/#highlight/">Highlight</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Hello, World!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="math">Math</h1>
+<hr>
+<p>You can use LaTeX-style math with <code>$</code> and <code>$$</code> delimiters. For example, <code>$x^2$</code> renders as $x^2$, and <code>$$\frac{x}{y}$$</code> renders as: $$\frac{x}{y}$$</p>
+<p>We can throw this scary-looking equation at you:</p>
+<p>$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } }
+$$</p>
+<h1 id="horizontal-rules">Horizontal Rules</h1>
+<hr>
+<p>Three or more&hellip; Hyphens <code>---</code>, Asterisks <code>***</code>, or Underscores <code>___</code>.</p>
+<hr>
+<hr>
+<hr>
+<h1 id="miscellaneous">Miscellaneous</h1>
+<hr>
+<p>Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use <code>hover:scroll-auto</code> to only <del>The world is flat.</del>
+apply the scroll-auto utility on hover.</p>
+<dl>
+<dt>term</dt>
+<dd>definition</dd>
+<dd>another definition</dd>
+</dl>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.brainyquote.com/quotes/mark_twain_137872">https://www.brainyquote.com/quotes/mark_twain_137872</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 ]]></content>
         </item>
         
