@@ -993,6 +993,283 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
         </item>
         
         <item>
+            <title>Arch_compendium</title>
+            <link>https://urbandavebe.github.io/posts/arch_compendium/</link>
+            <pubDate>Fri, 07 Feb 2025 19:23:25 +0100</pubDate>
+            
+            <guid>https://urbandavebe.github.io/posts/arch_compendium/</guid>
+            <description>&lt;h1 id=&#34;1-software-development-principles&#34;&gt;1. Software Development Principles&lt;/h1&gt;
+&lt;h2 id=&#34;solid-object-oriented-design&#34;&gt;SOLID (Object-Oriented Design)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single Responsibility&lt;/strong&gt;: A class should have one reason to change.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open/Closed&lt;/strong&gt;: Open for extension, closed for modification.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Liskov Substitution&lt;/strong&gt;: Subtypes must be replaceable with their base types.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interface Segregation&lt;/strong&gt;: Avoid bloated interfaces; split them into smaller ones.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dependency Inversion&lt;/strong&gt;: Depend on abstractions, not concretions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dry-dont-repeat-yourself&#34;&gt;DRY (Don’t Repeat Yourself)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid code duplication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;kiss-keep-it-simple-stupid&#34;&gt;KISS (Keep It Simple, Stupid)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Simplicity over complexity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;yagni-you-aint-gonna-need-it&#34;&gt;YAGNI (You Ain’t Gonna Need It)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Don’t add functionality until necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;grasp-general-responsibility-assignment&#34;&gt;GRASP (General Responsibility Assignment)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Patterns like Creator, Controller, Low Coupling, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;2-software-architecture-principles&#34;&gt;2. Software Architecture Principles&lt;/h1&gt;
+&lt;h2 id=&#34;cqrs-command-query-responsibility-segregation&#34;&gt;CQRS (Command Query Responsibility Segregation)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Separate read and write operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;event-sourcing&#34;&gt;Event Sourcing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Store state changes as events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hexagonalports--adapters&#34;&gt;Hexagonal/Ports &amp;amp; Adapters&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Decouple core logic from external systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;twelve-factor-app&#34;&gt;Twelve-Factor App&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Principles for cloud-native apps (e.g., config in environment, stateless processes).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;restful-principles&#34;&gt;RESTful Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Statelessness, uniform interface, cacheability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;3-enterprise-architecture-frameworks&#34;&gt;3. Enterprise Architecture Frameworks&lt;/h1&gt;
+&lt;h2 id=&#34;togaf&#34;&gt;TOGAF&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A methodology for enterprise architecture design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;zachman-framework&#34;&gt;Zachman Framework&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A matrix for organizing architectural artifacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;feaf&#34;&gt;FEAF&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;U.S. Federal Enterprise Architecture Framework.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;soa-principles-service-oriented-architecture&#34;&gt;SOA Principles (Service-Oriented Architecture)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loose coupling, service contracts, reusability, composability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;microservices-principles&#34;&gt;Microservices Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Decentralized data, bounded contexts, infrastructure automation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;4-database-principles&#34;&gt;4. Database Principles&lt;/h1&gt;
+&lt;h2 id=&#34;acid-transactions&#34;&gt;ACID (Transactions)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Atomicity&lt;/strong&gt;: All-or-nothing execution.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: Valid state transitions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Isolation&lt;/strong&gt;: Concurrent transactions don’t interfere.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Durability&lt;/strong&gt;: Committed data survives failures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cap-theorem&#34;&gt;CAP Theorem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Trade-offs between &lt;strong&gt;Consistency&lt;/strong&gt;, &lt;strong&gt;Availability&lt;/strong&gt;, and &lt;strong&gt;Partition tolerance&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;base-nosql&#34;&gt;BASE (NoSQL)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Basically Available&lt;/strong&gt;, &lt;strong&gt;Soft state&lt;/strong&gt;, &lt;strong&gt;Eventual consistency&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;5-devops--infrastructure&#34;&gt;5. DevOps &amp;amp; Infrastructure&lt;/h1&gt;
+&lt;h2 id=&#34;cicd-continuous-integrationdeployment&#34;&gt;CI/CD (Continuous Integration/Deployment)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Automate testing and delivery.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;infrastructure-as-code-iac&#34;&gt;Infrastructure as Code (IaC)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Manage infrastructure via code (e.g., Terraform).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;immutable-infrastructure&#34;&gt;Immutable Infrastructure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace servers instead of modifying them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;6-security-principles&#34;&gt;6. Security Principles&lt;/h1&gt;
+&lt;h2 id=&#34;least-privilege&#34;&gt;Least Privilege&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimal access rights for users/systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;defense-in-depth&#34;&gt;Defense in Depth&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiple layers of security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;zero-trust&#34;&gt;Zero Trust&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify explicitly, assume breach.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;7-distributed-systems--cloud&#34;&gt;7. Distributed Systems &amp;amp; Cloud&lt;/h1&gt;
+&lt;h2 id=&#34;fallacies-of-distributed-computing&#34;&gt;Fallacies of Distributed Computing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Assumptions to avoid (e.g., &amp;ldquo;The network is reliable&amp;rdquo;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;design-for-failure&#34;&gt;Design for Failure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Assume components will fail (e.g., Netflix Chaos Monkey).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;8-agile--process-principles&#34;&gt;8. Agile &amp;amp; Process Principles&lt;/h1&gt;
+&lt;h2 id=&#34;agile-manifesto&#34;&gt;Agile Manifesto&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Individuals over processes, working software over documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;iterative-development&#34;&gt;Iterative Development&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deliver incrementally.&lt;/li&gt;
+&lt;/ul&gt;</description>
+            <content type="html"><![CDATA[<h1 id="1-software-development-principles">1. Software Development Principles</h1>
+<h2 id="solid-object-oriented-design">SOLID (Object-Oriented Design)</h2>
+<ul>
+<li><strong>Single Responsibility</strong>: A class should have one reason to change.</li>
+<li><strong>Open/Closed</strong>: Open for extension, closed for modification.</li>
+<li><strong>Liskov Substitution</strong>: Subtypes must be replaceable with their base types.</li>
+<li><strong>Interface Segregation</strong>: Avoid bloated interfaces; split them into smaller ones.</li>
+<li><strong>Dependency Inversion</strong>: Depend on abstractions, not concretions.</li>
+</ul>
+<h2 id="dry-dont-repeat-yourself">DRY (Don’t Repeat Yourself)</h2>
+<ul>
+<li>Avoid code duplication.</li>
+</ul>
+<h2 id="kiss-keep-it-simple-stupid">KISS (Keep It Simple, Stupid)</h2>
+<ul>
+<li>Simplicity over complexity.</li>
+</ul>
+<h2 id="yagni-you-aint-gonna-need-it">YAGNI (You Ain’t Gonna Need It)</h2>
+<ul>
+<li>Don’t add functionality until necessary.</li>
+</ul>
+<h2 id="grasp-general-responsibility-assignment">GRASP (General Responsibility Assignment)</h2>
+<ul>
+<li>Patterns like Creator, Controller, Low Coupling, etc.</li>
+</ul>
+<hr>
+<h1 id="2-software-architecture-principles">2. Software Architecture Principles</h1>
+<h2 id="cqrs-command-query-responsibility-segregation">CQRS (Command Query Responsibility Segregation)</h2>
+<ul>
+<li>Separate read and write operations.</li>
+</ul>
+<h2 id="event-sourcing">Event Sourcing</h2>
+<ul>
+<li>Store state changes as events.</li>
+</ul>
+<h2 id="hexagonalports--adapters">Hexagonal/Ports &amp; Adapters</h2>
+<ul>
+<li>Decouple core logic from external systems.</li>
+</ul>
+<h2 id="twelve-factor-app">Twelve-Factor App</h2>
+<ul>
+<li>Principles for cloud-native apps (e.g., config in environment, stateless processes).</li>
+</ul>
+<h2 id="restful-principles">RESTful Principles</h2>
+<ul>
+<li>Statelessness, uniform interface, cacheability.</li>
+</ul>
+<hr>
+<h1 id="3-enterprise-architecture-frameworks">3. Enterprise Architecture Frameworks</h1>
+<h2 id="togaf">TOGAF</h2>
+<ul>
+<li>A methodology for enterprise architecture design.</li>
+</ul>
+<h2 id="zachman-framework">Zachman Framework</h2>
+<ul>
+<li>A matrix for organizing architectural artifacts.</li>
+</ul>
+<h2 id="feaf">FEAF</h2>
+<ul>
+<li>U.S. Federal Enterprise Architecture Framework.</li>
+</ul>
+<h2 id="soa-principles-service-oriented-architecture">SOA Principles (Service-Oriented Architecture)</h2>
+<ul>
+<li>Loose coupling, service contracts, reusability, composability.</li>
+</ul>
+<h2 id="microservices-principles">Microservices Principles</h2>
+<ul>
+<li>Decentralized data, bounded contexts, infrastructure automation.</li>
+</ul>
+<hr>
+<h1 id="4-database-principles">4. Database Principles</h1>
+<h2 id="acid-transactions">ACID (Transactions)</h2>
+<ul>
+<li><strong>Atomicity</strong>: All-or-nothing execution.</li>
+<li><strong>Consistency</strong>: Valid state transitions.</li>
+<li><strong>Isolation</strong>: Concurrent transactions don’t interfere.</li>
+<li><strong>Durability</strong>: Committed data survives failures.</li>
+</ul>
+<h2 id="cap-theorem">CAP Theorem</h2>
+<ul>
+<li>Trade-offs between <strong>Consistency</strong>, <strong>Availability</strong>, and <strong>Partition tolerance</strong>.</li>
+</ul>
+<h2 id="base-nosql">BASE (NoSQL)</h2>
+<ul>
+<li><strong>Basically Available</strong>, <strong>Soft state</strong>, <strong>Eventual consistency</strong>.</li>
+</ul>
+<hr>
+<h1 id="5-devops--infrastructure">5. DevOps &amp; Infrastructure</h1>
+<h2 id="cicd-continuous-integrationdeployment">CI/CD (Continuous Integration/Deployment)</h2>
+<ul>
+<li>Automate testing and delivery.</li>
+</ul>
+<h2 id="infrastructure-as-code-iac">Infrastructure as Code (IaC)</h2>
+<ul>
+<li>Manage infrastructure via code (e.g., Terraform).</li>
+</ul>
+<h2 id="immutable-infrastructure">Immutable Infrastructure</h2>
+<ul>
+<li>Replace servers instead of modifying them.</li>
+</ul>
+<hr>
+<h1 id="6-security-principles">6. Security Principles</h1>
+<h2 id="least-privilege">Least Privilege</h2>
+<ul>
+<li>Minimal access rights for users/systems.</li>
+</ul>
+<h2 id="defense-in-depth">Defense in Depth</h2>
+<ul>
+<li>Multiple layers of security.</li>
+</ul>
+<h2 id="zero-trust">Zero Trust</h2>
+<ul>
+<li>Verify explicitly, assume breach.</li>
+</ul>
+<hr>
+<h1 id="7-distributed-systems--cloud">7. Distributed Systems &amp; Cloud</h1>
+<h2 id="fallacies-of-distributed-computing">Fallacies of Distributed Computing</h2>
+<ul>
+<li>Assumptions to avoid (e.g., &ldquo;The network is reliable&rdquo;).</li>
+</ul>
+<h2 id="design-for-failure">Design for Failure</h2>
+<ul>
+<li>Assume components will fail (e.g., Netflix Chaos Monkey).</li>
+</ul>
+<hr>
+<h1 id="8-agile--process-principles">8. Agile &amp; Process Principles</h1>
+<h2 id="agile-manifesto">Agile Manifesto</h2>
+<ul>
+<li>Individuals over processes, working software over documentation.</li>
+</ul>
+<h2 id="iterative-development">Iterative Development</h2>
+<ul>
+<li>Deliver incrementally.</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
             <title>Markdown Cheat Sheet</title>
             <link>https://urbandavebe.github.io/posts/mdzeugs/</link>
             <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>

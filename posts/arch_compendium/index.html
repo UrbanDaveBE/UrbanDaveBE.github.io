@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="1. Software Development Principles SOLID (Object-Oriented Design) Single Responsibility: A class should have one reason to change. Open/Closed: Open for extension, closed for modification. Liskov Substitution: Subtypes must be replaceable with their base types. Interface Segregation: Avoid bloated interfaces; split them into smaller ones. Dependency Inversion: Depend on abstractions, not concretions. DRY (Don’t Repeat Yourself) Avoid code duplication. KISS (Keep It Simple, Stupid) Simplicity over complexity. YAGNI (You Ain’t Gonna Need It) Don’t add functionality until necessary. GRASP (General Responsibility Assignment) Patterns like Creator, Controller, Low Coupling, etc. 2. Software Architecture Principles CQRS (Command Query Responsibility Segregation) Separate read and write operations. Event Sourcing Store state changes as events. Hexagonal/Ports &amp; Adapters Decouple core logic from external systems. Twelve-Factor App Principles for cloud-native apps (e.g., config in environment, stateless processes). RESTful Principles Statelessness, uniform interface, cacheability. 3. Enterprise Architecture Frameworks TOGAF A methodology for enterprise architecture design. Zachman Framework A matrix for organizing architectural artifacts. FEAF U.S. Federal Enterprise Architecture Framework. SOA Principles (Service-Oriented Architecture) Loose coupling, service contracts, reusability, composability. Microservices Principles Decentralized data, bounded contexts, infrastructure automation. 4. Database Principles ACID (Transactions) Atomicity: All-or-nothing execution. Consistency: Valid state transitions. Isolation: Concurrent transactions don’t interfere. Durability: Committed data survives failures. CAP Theorem Trade-offs between Consistency, Availability, and Partition tolerance. BASE (NoSQL) Basically Available, Soft state, Eventual consistency. 5. DevOps &amp; Infrastructure CI/CD (Continuous Integration/Deployment) Automate testing and delivery. Infrastructure as Code (IaC) Manage infrastructure via code (e.g., Terraform). Immutable Infrastructure Replace servers instead of modifying them. 6. Security Principles Least Privilege Minimal access rights for users/systems. Defense in Depth Multiple layers of security. Zero Trust Verify explicitly, assume breach. 7. Distributed Systems &amp; Cloud Fallacies of Distributed Computing Assumptions to avoid (e.g., &ldquo;The network is reliable&rdquo;). Design for Failure Assume components will fail (e.g., Netflix Chaos Monkey). 8. Agile &amp; Process Principles Agile Manifesto Individuals over processes, working software over documentation. Iterative Development Deliver incrementally. " />
+<meta name="keywords" content=", untagged" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://urbandavebe.github.io/posts/arch_compendium/" />
+
+
+    <title>
+        
+            Arch_compendium :: some random docs 
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Arch_compendium">
+  <meta itemprop="description" content="1. Software Development Principles SOLID (Object-Oriented Design) Single Responsibility: A class should have one reason to change. Open/Closed: Open for extension, closed for modification. Liskov Substitution: Subtypes must be replaceable with their base types. Interface Segregation: Avoid bloated interfaces; split them into smaller ones. Dependency Inversion: Depend on abstractions, not concretions. DRY (Don’t Repeat Yourself) Avoid code duplication. KISS (Keep It Simple, Stupid) Simplicity over complexity. YAGNI (You Ain’t Gonna Need It) Don’t add functionality until necessary. GRASP (General Responsibility Assignment) Patterns like Creator, Controller, Low Coupling, etc. 2. Software Architecture Principles CQRS (Command Query Responsibility Segregation) Separate read and write operations. Event Sourcing Store state changes as events. Hexagonal/Ports &amp; Adapters Decouple core logic from external systems. Twelve-Factor App Principles for cloud-native apps (e.g., config in environment, stateless processes). RESTful Principles Statelessness, uniform interface, cacheability. 3. Enterprise Architecture Frameworks TOGAF A methodology for enterprise architecture design. Zachman Framework A matrix for organizing architectural artifacts. FEAF U.S. Federal Enterprise Architecture Framework. SOA Principles (Service-Oriented Architecture) Loose coupling, service contracts, reusability, composability. Microservices Principles Decentralized data, bounded contexts, infrastructure automation. 4. Database Principles ACID (Transactions) Atomicity: All-or-nothing execution. Consistency: Valid state transitions. Isolation: Concurrent transactions don’t interfere. Durability: Committed data survives failures. CAP Theorem Trade-offs between Consistency, Availability, and Partition tolerance. BASE (NoSQL) Basically Available, Soft state, Eventual consistency. 5. DevOps &amp; Infrastructure CI/CD (Continuous Integration/Deployment) Automate testing and delivery. Infrastructure as Code (IaC) Manage infrastructure via code (e.g., Terraform). Immutable Infrastructure Replace servers instead of modifying them. 6. Security Principles Least Privilege Minimal access rights for users/systems. Defense in Depth Multiple layers of security. Zero Trust Verify explicitly, assume breach. 7. Distributed Systems &amp; Cloud Fallacies of Distributed Computing Assumptions to avoid (e.g., “The network is reliable”). Design for Failure Assume components will fail (e.g., Netflix Chaos Monkey). 8. Agile &amp; Process Principles Agile Manifesto Individuals over processes, working software over documentation. Iterative Development Deliver incrementally.">
+  <meta itemprop="datePublished" content="2025-02-07T19:23:25+01:00">
+  <meta itemprop="dateModified" content="2025-02-07T19:23:25+01:00">
+  <meta itemprop="wordCount" content="316">
+  <meta itemprop="keywords" content="Untagged">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arch_compendium">
+  <meta name="twitter:description" content="1. Software Development Principles SOLID (Object-Oriented Design) Single Responsibility: A class should have one reason to change. Open/Closed: Open for extension, closed for modification. Liskov Substitution: Subtypes must be replaceable with their base types. Interface Segregation: Avoid bloated interfaces; split them into smaller ones. Dependency Inversion: Depend on abstractions, not concretions. DRY (Don’t Repeat Yourself) Avoid code duplication. KISS (Keep It Simple, Stupid) Simplicity over complexity. YAGNI (You Ain’t Gonna Need It) Don’t add functionality until necessary. GRASP (General Responsibility Assignment) Patterns like Creator, Controller, Low Coupling, etc. 2. Software Architecture Principles CQRS (Command Query Responsibility Segregation) Separate read and write operations. Event Sourcing Store state changes as events. Hexagonal/Ports &amp; Adapters Decouple core logic from external systems. Twelve-Factor App Principles for cloud-native apps (e.g., config in environment, stateless processes). RESTful Principles Statelessness, uniform interface, cacheability. 3. Enterprise Architecture Frameworks TOGAF A methodology for enterprise architecture design. Zachman Framework A matrix for organizing architectural artifacts. FEAF U.S. Federal Enterprise Architecture Framework. SOA Principles (Service-Oriented Architecture) Loose coupling, service contracts, reusability, composability. Microservices Principles Decentralized data, bounded contexts, infrastructure automation. 4. Database Principles ACID (Transactions) Atomicity: All-or-nothing execution. Consistency: Valid state transitions. Isolation: Concurrent transactions don’t interfere. Durability: Committed data survives failures. CAP Theorem Trade-offs between Consistency, Availability, and Partition tolerance. BASE (NoSQL) Basically Available, Soft state, Eventual consistency. 5. DevOps &amp; Infrastructure CI/CD (Continuous Integration/Deployment) Automate testing and delivery. Infrastructure as Code (IaC) Manage infrastructure via code (e.g., Terraform). Immutable Infrastructure Replace servers instead of modifying them. 6. Security Principles Least Privilege Minimal access rights for users/systems. Defense in Depth Multiple layers of security. Zero Trust Verify explicitly, assume breach. 7. Distributed Systems &amp; Cloud Fallacies of Distributed Computing Assumptions to avoid (e.g., “The network is reliable”). Design for Failure Assume components will fail (e.g., Netflix Chaos Monkey). 8. Agile &amp; Process Principles Agile Manifesto Individuals over processes, working software over documentation. Iterative Development Deliver incrementally.">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-07 19:23:25 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/">Home</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+      <p>Author: Unbekannt</p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://urbandavebe.github.io/posts/arch_compendium/">Arch_compendium</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <h1 id="1-software-development-principles">1. Software Development Principles</h1>
+<h2 id="solid-object-oriented-design">SOLID (Object-Oriented Design)</h2>
+<ul>
+<li><strong>Single Responsibility</strong>: A class should have one reason to change.</li>
+<li><strong>Open/Closed</strong>: Open for extension, closed for modification.</li>
+<li><strong>Liskov Substitution</strong>: Subtypes must be replaceable with their base types.</li>
+<li><strong>Interface Segregation</strong>: Avoid bloated interfaces; split them into smaller ones.</li>
+<li><strong>Dependency Inversion</strong>: Depend on abstractions, not concretions.</li>
+</ul>
+<h2 id="dry-dont-repeat-yourself">DRY (Don’t Repeat Yourself)</h2>
+<ul>
+<li>Avoid code duplication.</li>
+</ul>
+<h2 id="kiss-keep-it-simple-stupid">KISS (Keep It Simple, Stupid)</h2>
+<ul>
+<li>Simplicity over complexity.</li>
+</ul>
+<h2 id="yagni-you-aint-gonna-need-it">YAGNI (You Ain’t Gonna Need It)</h2>
+<ul>
+<li>Don’t add functionality until necessary.</li>
+</ul>
+<h2 id="grasp-general-responsibility-assignment">GRASP (General Responsibility Assignment)</h2>
+<ul>
+<li>Patterns like Creator, Controller, Low Coupling, etc.</li>
+</ul>
+<hr>
+<h1 id="2-software-architecture-principles">2. Software Architecture Principles</h1>
+<h2 id="cqrs-command-query-responsibility-segregation">CQRS (Command Query Responsibility Segregation)</h2>
+<ul>
+<li>Separate read and write operations.</li>
+</ul>
+<h2 id="event-sourcing">Event Sourcing</h2>
+<ul>
+<li>Store state changes as events.</li>
+</ul>
+<h2 id="hexagonalports--adapters">Hexagonal/Ports &amp; Adapters</h2>
+<ul>
+<li>Decouple core logic from external systems.</li>
+</ul>
+<h2 id="twelve-factor-app">Twelve-Factor App</h2>
+<ul>
+<li>Principles for cloud-native apps (e.g., config in environment, stateless processes).</li>
+</ul>
+<h2 id="restful-principles">RESTful Principles</h2>
+<ul>
+<li>Statelessness, uniform interface, cacheability.</li>
+</ul>
+<hr>
+<h1 id="3-enterprise-architecture-frameworks">3. Enterprise Architecture Frameworks</h1>
+<h2 id="togaf">TOGAF</h2>
+<ul>
+<li>A methodology for enterprise architecture design.</li>
+</ul>
+<h2 id="zachman-framework">Zachman Framework</h2>
+<ul>
+<li>A matrix for organizing architectural artifacts.</li>
+</ul>
+<h2 id="feaf">FEAF</h2>
+<ul>
+<li>U.S. Federal Enterprise Architecture Framework.</li>
+</ul>
+<h2 id="soa-principles-service-oriented-architecture">SOA Principles (Service-Oriented Architecture)</h2>
+<ul>
+<li>Loose coupling, service contracts, reusability, composability.</li>
+</ul>
+<h2 id="microservices-principles">Microservices Principles</h2>
+<ul>
+<li>Decentralized data, bounded contexts, infrastructure automation.</li>
+</ul>
+<hr>
+<h1 id="4-database-principles">4. Database Principles</h1>
+<h2 id="acid-transactions">ACID (Transactions)</h2>
+<ul>
+<li><strong>Atomicity</strong>: All-or-nothing execution.</li>
+<li><strong>Consistency</strong>: Valid state transitions.</li>
+<li><strong>Isolation</strong>: Concurrent transactions don’t interfere.</li>
+<li><strong>Durability</strong>: Committed data survives failures.</li>
+</ul>
+<h2 id="cap-theorem">CAP Theorem</h2>
+<ul>
+<li>Trade-offs between <strong>Consistency</strong>, <strong>Availability</strong>, and <strong>Partition tolerance</strong>.</li>
+</ul>
+<h2 id="base-nosql">BASE (NoSQL)</h2>
+<ul>
+<li><strong>Basically Available</strong>, <strong>Soft state</strong>, <strong>Eventual consistency</strong>.</li>
+</ul>
+<hr>
+<h1 id="5-devops--infrastructure">5. DevOps &amp; Infrastructure</h1>
+<h2 id="cicd-continuous-integrationdeployment">CI/CD (Continuous Integration/Deployment)</h2>
+<ul>
+<li>Automate testing and delivery.</li>
+</ul>
+<h2 id="infrastructure-as-code-iac">Infrastructure as Code (IaC)</h2>
+<ul>
+<li>Manage infrastructure via code (e.g., Terraform).</li>
+</ul>
+<h2 id="immutable-infrastructure">Immutable Infrastructure</h2>
+<ul>
+<li>Replace servers instead of modifying them.</li>
+</ul>
+<hr>
+<h1 id="6-security-principles">6. Security Principles</h1>
+<h2 id="least-privilege">Least Privilege</h2>
+<ul>
+<li>Minimal access rights for users/systems.</li>
+</ul>
+<h2 id="defense-in-depth">Defense in Depth</h2>
+<ul>
+<li>Multiple layers of security.</li>
+</ul>
+<h2 id="zero-trust">Zero Trust</h2>
+<ul>
+<li>Verify explicitly, assume breach.</li>
+</ul>
+<hr>
+<h1 id="7-distributed-systems--cloud">7. Distributed Systems &amp; Cloud</h1>
+<h2 id="fallacies-of-distributed-computing">Fallacies of Distributed Computing</h2>
+<ul>
+<li>Assumptions to avoid (e.g., &ldquo;The network is reliable&rdquo;).</li>
+</ul>
+<h2 id="design-for-failure">Design for Failure</h2>
+<ul>
+<li>Assume components will fail (e.g., Netflix Chaos Monkey).</li>
+</ul>
+<hr>
+<h1 id="8-agile--process-principles">8. Agile &amp; Process Principles</h1>
+<h2 id="agile-manifesto">Agile Manifesto</h2>
+<ul>
+<li>Individuals over processes, working software over documentation.</li>
+</ul>
+<h2 id="iterative-development">Iterative Development</h2>
+<ul>
+<li>Deliver incrementally.</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://urbandavebe.github.io/tags/untagged/">untagged</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        316 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2025-02-07 19:23
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="https://urbandavebe.github.io/posts/migrate-from-jekyll/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">Migrate to Hugo from Jekyll</span>
+                </a>
+            </span>
+            
+
+            
+            <span class="button next">
+                <a href="https://urbandavebe.github.io/posts/mdzeugs/">
+                    <span class="button__text">Markdown Cheat Sheet</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; UrbanDaveBE</span>
+            <span><a href="https://urbandavebe.github.io/"></a></span>
+            <span></span>
+            <span><a href="https://urbandavebe.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span>Footer top text here</span>
+        </div>
+    </div>
+    
+
+      
+      <div class="footer__inner">
+        <div class="social-media-links">
+    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  </div>
+  
+    </div>
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Footer bottom text</span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
