@@ -202,6 +202,7 @@
                     antwortElement.innerHTML = `
                         <input type="${inputType}" name="frage-${frageIndex}" value="${antwortIndex}">
                         ${antwort.text}
+                        <span class="feedback"></span>
                     `;
                     frageElement.appendChild(antwortElement);
                 });
@@ -213,7 +214,9 @@
         }
 
         
-        function überprüfeAntworten() {
+        function überprüfeAntworten(event) {
+            event.preventDefault(); 
+
             daten.fragen.forEach((frage, frageIndex) => {
                 const selectedAnswers = Array.from(
                     document.querySelectorAll(`input[name="frage-${frageIndex}"]:checked`)
@@ -227,18 +230,23 @@
 
                 antwortElements.forEach((element, index) => {
                     const input = element.querySelector('input');
+                    const feedback = element.querySelector('.feedback');
                     const isSelected = selectedAnswers.includes(index);
                     const isCorrect = correctAnswers.includes(index);
 
+                    
+                    feedback.textContent = '';
+                    element.classList.remove('richtig', 'falsch', 'fehlend');
+
                     if (isSelected && isCorrect) {
                         element.classList.add('richtig');
-                        element.innerHTML += ' ✔️';
+                        feedback.textContent = ' ✔️';
                     } else if (isSelected && !isCorrect) {
                         element.classList.add('falsch');
-                        element.innerHTML += ' ❌';
+                        feedback.textContent = ' ❌';
                     } else if (!isSelected && isCorrect) {
                         element.classList.add('fehlend');
-                        element.innerHTML += ' ✔️';
+                        feedback.textContent = ' ✔️';
                     }
                 });
             });
