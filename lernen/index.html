@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="&lt;!DOCTYPE html&gt;LernkartenAntworten einreichen" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://urbandavebe.github.io/lernen/" />
+
+
+    <title>
+        
+            Lernen :: some random docs 
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Lernen">
+  <meta itemprop="description" content="&lt;!DOCTYPE html&gt;LernkartenAntworten einreichen">
+  <meta itemprop="datePublished" content="2025-02-28T16:21:17+01:00">
+  <meta itemprop="dateModified" content="2025-02-28T16:21:17+01:00">
+  <meta itemprop="wordCount" content="5">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lernen">
+  <meta name="twitter:description" content="&lt;!DOCTYPE html&gt;LernkartenAntworten einreichen">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-28 16:21:17 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/">Home</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://urbandavebe.github.io/lernen/">Lernen</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernkarten</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .frage { margin-bottom: 20px; }
+        .antwort { margin: 5px 0; padding: 5px; }
+        .richtig { color: green; }
+        .falsch { color: red; }
+        .fehlend { background-color: #ffcccc; }
+        button { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <div id="quiz"></div>
+    <button id="submit" style="display: none;">Antworten einreichen</button>
+
+    <script>
+        
+        const daten = {
+          "fragen": [
+            {
+              "frage": "Was ist VBV?",
+              "typ": "single-choice",
+              "antworten": [
+                {"text": "Versicherungsberatungsverordnung", "istRichtig": true},
+                {"text": "Versicherungsbetrugsverhinderung", "istRichtig": false},
+                {"text": "Versicherungsbeitragsverordnung", "istRichtig": false}
+              ]
+            },
+            {
+              "frage": "Welche Versicherungen sind Pflicht?",
+              "typ": "multiple-choice",
+              "antworten": [
+                {"text": "Krankenversicherung", "istRichtig": true},
+                {"text": "Kfz-Haftpflichtversicherung", "istRichtig": true},
+                {"text": "Hausratversicherung", "istRichtig": false},
+                {"text": "Reiseversicherung", "istRichtig": false}
+              ]
+            }
+          ]
+        };
+
+        const quizContainer = document.getElementById('quiz');
+        const submitButton = document.getElementById('submit');
+
+        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        
+        function zeigeFragen() {
+            const shuffledFragen = shuffleArray(daten.fragen);
+
+            shuffledFragen.forEach((frage, frageIndex) => {
+                const frageElement = document.createElement('div');
+                frageElement.className = 'frage';
+                frageElement.innerHTML = `<h3>${frageIndex + 1}. ${frage.frage}</h3>`;
+
+                const shuffledAntworten = shuffleArray(frage.antworten);
+                shuffledAntworten.forEach((antwort, antwortIndex) => {
+                    const antwortElement = document.createElement('div');
+                    antwortElement.className = 'antwort';
+                    const inputType = frage.typ === 'single-choice' ? 'radio' : 'checkbox';
+                    antwortElement.innerHTML = `
+                        <input type="${inputType}" name="frage-${frageIndex}" value="${antwortIndex}">
+                        ${antwort.text}
+                    `;
+                    frageElement.appendChild(antwortElement);
+                });
+
+                quizContainer.appendChild(frageElement);
+            });
+
+            submitButton.style.display = 'block';
+        }
+
+        
+        function überprüfeAntworten() {
+            daten.fragen.forEach((frage, frageIndex) => {
+                const selectedAnswers = Array.from(
+                    document.querySelectorAll(`input[name="frage-${frageIndex}"]:checked`)
+                ).map(input => parseInt(input.value));
+
+                const correctAnswers = frage.antworten
+                    .map((antwort, index) => antwort.istRichtig ? index : -1)
+                    .filter(index => index !== -1);
+
+                const antwortElements = document.querySelectorAll(`div.frage:nth-child(${frageIndex + 1}) .antwort`);
+
+                antwortElements.forEach((element, index) => {
+                    const input = element.querySelector('input');
+                    const isSelected = selectedAnswers.includes(index);
+                    const isCorrect = correctAnswers.includes(index);
+
+                    if (isSelected && isCorrect) {
+                        element.classList.add('richtig');
+                        element.innerHTML += ' ✔️';
+                    } else if (isSelected && !isCorrect) {
+                        element.classList.add('falsch');
+                        element.innerHTML += ' ❌';
+                    } else if (!isSelected && isCorrect) {
+                        element.classList.add('fehlend');
+                        element.innerHTML += ' ✔️';
+                    }
+                });
+            });
+        }
+
+        
+        zeigeFragen();
+
+        
+        submitButton.addEventListener('click', überprüfeAntworten);
+    </script>
+</body>
+</html>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; UrbanDaveBE</span>
+            <span><a href="https://urbandavebe.github.io/"></a></span>
+            <span></span>
+            <span><a href="https://urbandavebe.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span>Footer top text here</span>
+        </div>
+    </div>
+    
+
+      
+      <div class="footer__inner">
+        <div class="social-media-links">
+    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  </div>
+  
+    </div>
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Footer bottom text</span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
