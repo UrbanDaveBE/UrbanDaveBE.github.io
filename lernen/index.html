@@ -150,28 +150,117 @@
     <script>
         
         const daten = {
-          "fragen": [
-            {
-              "frage": "Was ist VBV?",
-              "typ": "single-choice",
-              "antworten": [
-                {"text": "Versicherungsberatungsverordnung", "istRichtig": true},
-                {"text": "Versicherungsbetrugsverhinderung", "istRichtig": false},
-                {"text": "Versicherungsbeitragsverordnung", "istRichtig": false}
-              ]
-            },
-            {
-              "frage": "Welche Versicherungen sind Pflicht?",
-              "typ": "multiple-choice",
-              "antworten": [
-                {"text": "Krankenversicherung", "istRichtig": true},
-                {"text": "Kfz-Haftpflichtversicherung", "istRichtig": true},
-                {"text": "Hausratversicherung", "istRichtig": false},
-                {"text": "Reiseversicherung", "istRichtig": false}
-              ]
-            }
-          ]
-        };
+            "fragen": [
+              {
+                "frage": "Im Restaurant wird ein mit CHF 1200.- gefülltes Serviceportemonnaie unbemerkt entwendet. Um welche Art von Diebstahl handelt es sich?",
+                "typ": "single-choice",
+                "antworten": [
+                  {"text": "Einbruchdiebstahl", "istRichtig": false},
+                  {"text": "Einfacher Diebstahl", "istRichtig": true},
+                  {"text": "Beraubung", "istRichtig": false}
+                ]
+              },
+              {
+                "frage": "Welches sind versicherte Schäden/Ereignisse in der Gebäude-Wasserversicherung?",
+                "typ": "multiple-choice",
+                "antworten": [
+                  {"text": "Schäden aus Regen-, Schmelz- oder Schneewasser, das durch offene Dachlücken oder - Fenster in ein Gebäude eindringt", "istRichtig": false},
+                  {"text": "Auslaufendes Heizöl aus Heizungs- und Tankanlagen im Inneren eines Gebäudes", "istRichtig": true},
+                  {"text": "Austritt von Wasser aus Leitungen", "istRichtig": true},
+                  {"text": "Reparatur- und Auftaukosten von eingefrorenen Leitungen und daran angeschlossenen Apparaten", "istRichtig": true},
+                  {"text": "Rückstau aus Abwasserkanalisation", "istRichtig": true}
+                ]
+              },
+              {
+                "frage": "Maximale Leistung der Versicherung. Steht auf der Police. Grundlage der Prämienberechnung",
+                "typ": "single-choice",
+                "antworten": [
+                  {"text": "Versicherungssumme", "istRichtig": true},
+                  {"text": "Ersatzwert", "istRichtig": false},
+                  {"text": "Versicherungswert", "istRichtig": false}
+                ]
+              },
+              {
+                "frage": "Ein Autofahrer kommt bei Glatteis ins Schleudern und verursacht eine Kollision mit einem parkierten Fahrzeug. Markieren Sie die richtigen Antworten.",
+                "typ": "multiple-choice",
+                "antworten": [
+                  {"text": "Grundsätzlich sind Parkschäden nicht versichert.", "istRichtig": false},
+                  {"text": "Die Kollisionskasko des Verursachers übernimmt alle entstandenen Schäden.", "istRichtig": false},
+                  {"text": "Die Motorfahrzeughaftpflicht übernimmt den Schaden am parkierten Fahrzeug.", "istRichtig": true},
+                  {"text": "Die Teilkasko übernimmt den eigenen Schaden.", "istRichtig": false}
+                ]
+              },
+              {
+                "frage": "Durch ein offenes Fenster dringen unbekannte in ein Geschäftshaus ein und öffnen gewaltsam abgeschlossene Aktenschränke. Es werden daraus Sachen im Wert von CHF 10'000.- entwendet.",
+                "typ": "single-choice",
+                "antworten": [
+                  {"text": "Beraubung", "istRichtig": false},
+                  {"text": "Einfacher Diebstahl", "istRichtig": false},
+                  {"text": "Einbruchdiebstahl", "istRichtig": true}
+                ]
+              },
+              {
+                "frage": "Ihr Kunde besitzt eine Privathaftpflichtpolice. In welchen Fällen bieten Sie eine separate Gebäudehaftpflichtpolice an?",
+                "typ": "multiple-choice",
+                "antworten": [
+                  {"text": "Kunde besitzt ein Mehrfamilienhaus mit 3 Wohnungen, im Erdgeschoss befindet sich eine Bäckerei.", "istRichtig": true},
+                  {"text": "Kunde ist Eigentümer eines selbstbewohnten Zweifamilienhauses.", "istRichtig": false},
+                  {"text": "Kunde kauft (nur) einen Kloskbetrieb, den er selber betreibt.", "istRichtig": false},
+                  {"text": "Kunde ist Eigentümer eines selbstbewohnten Hauses mit 6 Wohnungen.", "istRichtig": true}
+                ]
+              },
+              {
+                "frage": "Welches sind die Kantone, in denen eine Hausratversicherung obligatorisch versichert werden muss?",
+                "typ": "multiple-choice",
+                "antworten": [
+                  {"text": "Nidwalden", "istRichtig": true},
+                  {"text": "Wallis", "istRichtig": false},
+                  {"text": "Fribourg", "istRichtig": true},
+                  {"text": "Jura", "istRichtig": true},
+                  {"text": "Schwyz", "istRichtig": false},
+                  {"text": "Tessin", "istRichtig": false},
+                  {"text": "Waadt", "istRichtig": true},
+                  {"text": "Genf", "istRichtig": false}
+                ]
+              },
+              {
+                "frage": "Welche Deckungsarten kennt die Transportversicherung?",
+                "typ": "multiple-choice",
+                "antworten": [
+                  {"text": "Eingeschränkte Versicherung", "istRichtig": true},
+                  {"text": "Volldeckung", "istRichtig": false},
+                  {"text": "Teildeckung", "istRichtig": false},
+                  {"text": "Versicherung gegen alle Risiken", "istRichtig": true}
+                ]
+              },
+              {
+                "frage": "...wird oft bei Camion-Eisenbahntransporten sowie bei Kurier- und Postsendungen in der Schweiz angewendet. Das versicherte Unternehmen muss die einzelnen Sendungen nicht anmelden. Für die Berechnung der Prämie sind die Art der Güter und die Anzahl der Transporte massgebend. Der Versicherer fordert die Prämie zu Beginn der Versicherungsperiode.",
+                "typ": "single-choice",
+                "antworten": [
+                  {"text": "Pauschalpolice", "istRichtig": true},
+                  {"text": "Generalpolice", "istRichtig": false},
+                  {"text": "Einzelpolice", "istRichtig": false},
+                  {"text": "Umsatzpolice", "istRichtig": false}
+                ]
+              },
+              {
+                "frage": "In Ihrer Tätigkeit als Versicherungsvermittler werden Sie auch gelegentlich in anderen Kantonen tätig sein. In welchen dieser Kantone können die Privatversicherungen die Gebäude-Feuerversicherung anbieten?",
+                "typ": "multiple-choice",
+                "antworten": [
+                  {"text": "Genf", "istRichtig": true},
+                  {"text": "Zug", "istRichtig": false},
+                  {"text": "Tessin", "istRichtig": true},
+                  {"text": "Wallis", "istRichtig": true},
+                  {"text": "Aargau", "istRichtig": false},
+                  {"text": "Obwalden", "istRichtig": true},
+                  {"text": "Uri", "istRichtig": true},
+                  {"text": "Bern", "istRichtig": false},
+                  {"text": "Zürich", "istRichtig": false},
+                  {"text": "Basel-Stadt", "istRichtig": false}
+                ]
+              }
+            ]
+          };
 
         const quizContainer = document.getElementById('quiz');
         const submitButton = document.getElementById('submit');
