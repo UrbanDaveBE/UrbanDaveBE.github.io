@@ -5,7 +5,7 @@
         <description>Recent content in Posts on some random docs</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 08 Feb 2025 12:35:44 +0100</lastBuildDate>
+        <lastBuildDate>Fri, 07 Mar 2025 09:15:26 +0100</lastBuildDate>
         <atom:link href="https://urbandavebe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
@@ -989,6 +989,63 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 <p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
 <h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
 <p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Kapitel34</title>
+            <link>https://urbandavebe.github.io/posts/kapitel34/</link>
+            <pubDate>Fri, 07 Mar 2025 09:15:26 +0100</pubDate>
+            
+            <guid>https://urbandavebe.github.io/posts/kapitel34/</guid>
+            <description>&lt;h2 id=&#34;21-analyse-der-strategischen-ausgangslage&#34;&gt;2.1 Analyse der strategischen Ausgangslage&lt;/h2&gt;
+&lt;h3 id=&#34;211-bisherige-entwicklung&#34;&gt;2.1.1 Bisherige Entwicklung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bisherige Entwicklung des unternehmens ermitteln&lt;/li&gt;
+&lt;li&gt;auf strategisch relevante Sachverhalte konzentrieren&lt;/li&gt;
+&lt;li&gt;daraus Hinweise auf die Qualität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;34-strategische-frühaufklärung-competitive-intelligence&#34;&gt;3.4 Strategische Frühaufklärung (Competitive Intelligence)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Aussagekräfte &amp;amp; zukunftsorientierte Informationen sind für ein wirksames Strategisches Management wichtig.&lt;/li&gt;
+&lt;li&gt;Informationen erst im Hinblick auf Strategieseminar bereitzustellen reicht nicht aus.&lt;/li&gt;
+&lt;li&gt;Beschaffung und Aufbereitung der Informationen ist vielmehr ein kontinuierlicher Prozess (= strategische Frühaufklärung / Competitive Intelligence / Strategic Foresight)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zeit-als-erfolgsfaktor&#34;&gt;Zeit als Erfolgsfaktor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;gem. General Electric &amp;ldquo;einen Weg, um Zeit zu kaufen und um Gefahren aufzuspüren, bevor sie unhandhabbar werden und um die Gelegenheit zu erfassen, bevor sie verloren sind.&lt;/li&gt;
+&lt;li&gt;Ziel besteht darin, Chancen und Gefahren frühzeitig zu erkennen mit der Absicht, das Unternehmen vor Krisen zu schützen.&lt;/li&gt;
+&lt;li&gt;Zeitdruck schränkt die Handlungsmöglichkeiten und Aktionsräume zunehmen ein.&lt;/li&gt;
+&lt;li&gt;krisenselten auf einzelne Ereignisse zurückführen.&lt;/li&gt;
+&lt;li&gt;Viel mehr Resultat einer Entwicklung, früh durch schwache Signale angekündigt.&lt;/li&gt;
+&lt;li&gt;Vernünftiger aufgrund vager Informationen frühzeitig zu handeln, als auf sichere Infos zu warten.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Je später eine Reaktion erfolgt, desto eingeschränkter ist normalerweise die Handlungs- und die Manövrierfähigkeit (Abbildung 3.19)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://urbandavebe.github.io/images/abb319.png&#34; alt=&#34;Abbildung 3.19&#34;&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="21-analyse-der-strategischen-ausgangslage">2.1 Analyse der strategischen Ausgangslage</h2>
+<h3 id="211-bisherige-entwicklung">2.1.1 Bisherige Entwicklung</h3>
+<ul>
+<li>bisherige Entwicklung des unternehmens ermitteln</li>
+<li>auf strategisch relevante Sachverhalte konzentrieren</li>
+<li>daraus Hinweise auf die Qualität</li>
+</ul>
+<h2 id="34-strategische-frühaufklärung-competitive-intelligence">3.4 Strategische Frühaufklärung (Competitive Intelligence)</h2>
+<ul>
+<li>Aussagekräfte &amp; zukunftsorientierte Informationen sind für ein wirksames Strategisches Management wichtig.</li>
+<li>Informationen erst im Hinblick auf Strategieseminar bereitzustellen reicht nicht aus.</li>
+<li>Beschaffung und Aufbereitung der Informationen ist vielmehr ein kontinuierlicher Prozess (= strategische Frühaufklärung / Competitive Intelligence / Strategic Foresight)</li>
+</ul>
+<h3 id="zeit-als-erfolgsfaktor">Zeit als Erfolgsfaktor</h3>
+<ul>
+<li>gem. General Electric &ldquo;einen Weg, um Zeit zu kaufen und um Gefahren aufzuspüren, bevor sie unhandhabbar werden und um die Gelegenheit zu erfassen, bevor sie verloren sind.</li>
+<li>Ziel besteht darin, Chancen und Gefahren frühzeitig zu erkennen mit der Absicht, das Unternehmen vor Krisen zu schützen.</li>
+<li>Zeitdruck schränkt die Handlungsmöglichkeiten und Aktionsräume zunehmen ein.</li>
+<li>krisenselten auf einzelne Ereignisse zurückführen.</li>
+<li>Viel mehr Resultat einer Entwicklung, früh durch schwache Signale angekündigt.</li>
+<li>Vernünftiger aufgrund vager Informationen frühzeitig zu handeln, als auf sichere Infos zu warten.</li>
+<li>&ldquo;Je später eine Reaktion erfolgt, desto eingeschränkter ist normalerweise die Handlungs- und die Manövrierfähigkeit (Abbildung 3.19)</li>
+</ul>
+<p><img src="/images/abb319.png" alt="Abbildung 3.19"></p>
 ]]></content>
         </item>
         
