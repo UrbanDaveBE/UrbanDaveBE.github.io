@@ -6,7 +6,7 @@
     <description>Recent content on some random docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2025 16:21:17 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 09:15:26 +0100</lastBuildDate>
     <atom:link href="https://urbandavebe.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My 2nd Post</title>
@@ -28,6 +28,20 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://urbandavebe.github.io/posts/migrate-from-jekyll/</guid>
       <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.&#xA;With Jekyll, something that looked like&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ images/&#xA;        logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;should become&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ static/&#xA;        ▾ images/&#xA;            logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kapitel34</title>
+      <link>https://urbandavebe.github.io/kapitel34/</link>
+      <pubDate>Fri, 07 Mar 2025 09:15:26 +0100</pubDate>
+      <guid>https://urbandavebe.github.io/kapitel34/</guid>
+      <description>&lt;h2 id=&#34;strategische-frühaufklärung-competitive-intelligence&#34;&gt;Strategische Frühaufklärung (Competitive Intelligence)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aussagekräfte &amp;amp; zukunftsorientierte Informationen sind für ein wirksames Strategisches Management wichtig.&lt;/li&gt;&#xA;&lt;li&gt;Informationen erst im Hinblick auf Strategieseminar bereitzustellen reicht nicht aus.&lt;/li&gt;&#xA;&lt;li&gt;Beschaffung und Aufbereitung der Informationen ist vielmehr ein kontinuierlicher Prozess (= strategische Frühaufklärung / Competitive Intelligence / Strategic Foresight)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;zeit-als-erfolgsfaktor&#34;&gt;Zeit als Erfolgsfaktor&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;gem. General Electric &amp;ldquo;einen Weg, um Zeit zu kaufen und um Gefahren aufzuspüren, bevor sie unhandhabbar werden und um die Gelegenheit zu erfassen, bevor sie verloren sind.&lt;/li&gt;&#xA;&lt;li&gt;Ziel besteht darin, Chancen und Gefahren frühzeitig zu erkennen mit der Absicht, das Unternehmen vor Krisen zu schützen.&lt;/li&gt;&#xA;&lt;li&gt;Zeitdruck schränkt die Handlungsmöglichkeiten und Aktionsräume zunehmen ein.&lt;/li&gt;&#xA;&lt;li&gt;krisenselten auf einzelne Ereignisse zurückführen.&lt;/li&gt;&#xA;&lt;li&gt;Viel mehr Resultat einer Entwicklung, früh durch schwache Signale angekündigt.&lt;/li&gt;&#xA;&lt;li&gt;Vernünftiger aufgrund vager Informationen frühzeitig zu handeln, als auf sichere Infos zu warten.&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Je später eine Reaktion erfolgt, desto eingeschränkter ist normalerweise die Handlungs- und die Manövrierfähigkeit (Abbildung 3.19)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://urbandavebe.github.io/images/abb319.png&#34; alt=&#34;Abbildung 3.19&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vbv Nullserie</title>
+      <link>https://urbandavebe.github.io/vbv-nullserie/</link>
+      <pubDate>Tue, 04 Mar 2025 12:33:43 +0100</pubDate>
+      <guid>https://urbandavebe.github.io/vbv-nullserie/</guid>
+      <description></description>
     </item>
     <item>
       <title>Lernen</title>
