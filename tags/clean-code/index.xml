@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Clean Code on some random docs</title><link>https://urbandavebe.github.io/tags/clean-code/</link><description>Recent content in Clean Code on some random docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Feb 2025 12:35:44 +0100</lastBuildDate><atom:link href="https://urbandavebe.github.io/tags/clean-code/index.xml" rel="self" type="application/rss+xml"/><item><title>SOLID Principles: Clean Code &amp; Design</title><link>https://urbandavebe.github.io/posts/solid/</link><pubDate>Sat, 08 Feb 2025 12:35:44 +0100</pubDate><guid>https://urbandavebe.github.io/posts/solid/</guid><description>&lt;h1 id="-solid-principles-object-oriented-design"&gt;🏗️ SOLID Principles (Object-Oriented Design)&lt;/h1&gt;
+&lt;p&gt;SOLID ist ein Akronym für fünf grundlegende Prinzipien des objektorientierten Designs. Sie wurden von &lt;strong&gt;Robert C. Martin (Uncle Bob)&lt;/strong&gt; geprägt und helfen dabei, Software zu entwickeln, die &lt;strong&gt;wartbar&lt;/strong&gt;, &lt;strong&gt;erweiterbar&lt;/strong&gt; und &lt;strong&gt;testbar&lt;/strong&gt; ist.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-single-responsibility-principle-srp"&gt;1. Single Responsibility Principle (SRP)&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;A class should have one, and only one, reason to change.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="was"&gt;&lt;strong&gt;Was?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Eine Klasse sollte &lt;strong&gt;nur eine einzige Aufgabe&lt;/strong&gt; haben. Wenn eine Klasse mehrere Verantwortlichkeiten übernimmt, führt dies zu einer starken Kopplung und erhöht die Fehleranfälligkeit bei Änderungen.&lt;/p&gt;</description></item></channel></rss>
